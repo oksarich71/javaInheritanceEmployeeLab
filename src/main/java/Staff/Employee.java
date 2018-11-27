@@ -17,14 +17,15 @@ public class Employee {
 
     public String getNumberNI(){return this.numberNI;}
 
-    public double raiseSalary(double raise){
-        return salary + raise;
+    public double raiseSalary(double raise) {
+        if (salary > 0.0) {
+            return salary + raise;}
+            return 0;
     }
 
     public double payBonus() {
         return salary * .01; }
 
-//
 
     }
 
